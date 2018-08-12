@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="./video-js.css" rel="stylesheet">
+    <script src="./video.js"></script>
+    <script>window.HELP_IMPROVE_VIDEOJS = false;</script>
+</head>
+<body>
+    <video
+        id="my-player"
+        class="video-js"
+        controls
+        preload="auto"
+        poster="//vjs.zencdn.net/v/oceans.png"
+        data-setup='{}'>
+        <source src="http://rinko.ml:8000/live/v/index.m3u8" type="application/x-mpegURL">
+        <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a web browser that
+            <a href="http://videojs.com/html5-video-support/" target="_blank">
+            supports HTML5 video
+            </a>
+        </p>
+    </video>
+
+<script type="text/javascript">
+    var player = videojs('example-video');
+    //player.play();
+</script>
+</body>
+</html>
