@@ -1,2 +1,3 @@
-# demopage-of-flv.js
-This repository provide a demopage to test flv.js
+# Live streaming demopage
+This repository provide a demopage to test flv.js and video.js
+Maybe more...
