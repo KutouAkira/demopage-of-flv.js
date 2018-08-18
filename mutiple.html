@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>NSTV live demo power by flv.js</title>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>live-stream-demopage</title>
     <link rel="stylesheet" type="text/css" href="./demo.css">
+    <link href="./video-js.css" rel="stylesheet">
+    <script src="./video.js"></script>
+    <script>window.HELP_IMPROVE_VIDEOJS = false;</script>
 </head>
 
 <body>
@@ -51,6 +56,29 @@
         </div>
         <textarea name="logcatbox" class="logcatBox" rows="10" readonly=""></textarea>
     </div>
+
+    <div class="mainContainer">
+            <video
+            id="my-player"
+            class="video-js vjs-big-play-button vjs-fluid"
+            controls
+            preload="auto"
+            poster="//vjs.zencdn.net/v/oceans.png"
+            data-setup='{}'>
+            <source src="http://rinko.ml:8000/live/v/index.m3u8" type="application/x-mpegURL">
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="http://videojs.com/html5-video-support/" target="_blank">
+                supports HTML5 video
+                </a>
+            </p>
+        </video>
+    </div>
+
+    <script type="text/javascript">
+        var player = videojs('example-video');
+        //player.play();
+    </script>
 
     <script src="./flv.js"></script>
     
